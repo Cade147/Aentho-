@@ -1,0 +1,21 @@
+{
+  "name": "Aentho — Business Dashboard",
+  "short_name": "Aentho",
+  "description": "Offline-first business dashboard for small businesses in low-connectivity environments.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#080d1a",
+  "theme_color": "#080d1a",
+  "orientation": "any",
+  "scope": "./",
+  "lang": "en",
+  "categories": ["business", "finance", "productivity"],
+  "icons": [
+    { "src": "assets/icons/icon-72.png",  "sizes": "72x72",   "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icons/icon-96.png",  "sizes": "96x96",   "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icons/icon-128.png", "sizes": "128x128", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icons/icon-144.png", "sizes": "144x144", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
