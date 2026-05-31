@@ -136,7 +136,7 @@
   color: var(--text-secondary);
 }
 
-/* ── Right Panel (Form) ───────────────────────────────── */
+/* ── Right Panel (Form) ────────────────────────────────��� */
 .auth-right {
   flex: 1;
   display: flex;
@@ -145,6 +145,7 @@
   padding: 32px 20px;
   position: relative;
   z-index: 1;
+  min-height: 100vh;
 }
 
 .auth-box {
@@ -223,6 +224,9 @@
   color: var(--text-muted);
   padding: 4px;
   transition: color var(--transition);
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 .toggle-password:hover { color: var(--text-secondary); }
 
@@ -265,6 +269,7 @@
   color: var(--accent);
   font-weight: 500;
   transition: color var(--transition);
+  text-decoration: none;
 }
 .auth-switch a:hover { color: #6ba3ff; text-decoration: underline; }
 
@@ -300,4 +305,73 @@
   font-size: 0.75rem;
   color: var(--text-muted);
   margin-top: 4px;
+}
+
+/* ── Mobile Responsive Improvements ───────────────────── */
+@media (max-width: 480px) {
+  .auth-page {
+    flex-direction: column;
+  }
+
+  .auth-left {
+    display: none !important;
+  }
+
+  .auth-right {
+    padding: 24px 16px;
+    min-height: auto;
+  }
+
+  .auth-box {
+    max-width: 100%;
+  }
+
+  .auth-box-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .auth-box-header p {
+    font-size: 0.85rem;
+  }
+
+  .auth-mobile-brand-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .auth-mobile-brand-name {
+    font-size: 1.1rem;
+  }
+
+  .auth-form {
+    gap: 14px;
+  }
+
+  .auth-submit {
+    padding: 11px;
+    font-size: 0.9rem;
+  }
+
+  .auth-switch {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .auth-right {
+    padding: 28px 18px;
+  }
+
+  .auth-box {
+    max-width: 100%;
+  }
+
+  .auth-box-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .auth-submit {
+    padding: 11px;
+    font-size: 0.92rem;
+  }
 }
