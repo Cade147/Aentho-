@@ -9,9 +9,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Aentho — Business Dashboard</title>
   <link rel="manifest" href="./manifest.json">
-  <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
-  <link rel="stylesheet" href="./styles/main.css">
-  <link rel="stylesheet" href="./styles/auth.css">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./auth.css">
 </head>
 <body class="auth-page">
 
@@ -30,7 +30,7 @@
   </div>
   <div class="auth-hero">
     <h2>Run your business<br><span>anywhere, anytime.</span></h2>
-    <p>Aentho is a powerful offline-first dashboard built for small businesses that operate in low-connectivity environments. Track sales, manage inventory, and grow your business — even without the internet.</p>
+    <p>Aentho is a powerful offline-first dashboard built for small businesses that operate in low-connectivity environments. Track sales, manage inventory, and grow your business — even without internet.</p>
   </div>
   <div class="auth-features">
     <div class="auth-feature-item"><div class="auth-feature-dot"></div><span>Works fully offline — syncs when back online</span></div>
@@ -94,7 +94,7 @@
     </div>
     <p style="font-size:.875rem;color:var(--text-secondary);margin-bottom:20px">Enter your email and we'll send you a reset link.</p>
     <div id="reset-error" class="auth-error" style="margin-bottom:12px"></div>
-    <div id="reset-success" style="display:none;background:var(--success-soft);border:1px solid rgba(16,185,129,.2);border-radius:var(--radius);padding:10px 14px;font-size:.85rem;color:var(--success);margin-bottom:12px">
+    <div id="reset-success" style="display:none;background:var(--success-soft);border:1px solid rgba(16,185,129,.2);border-radius:var(--radius);padding:10px 14px;font-size:.85rem;color:var(--success)">
       Reset link sent! Check your inbox.
     </div>
     <div class="form-group" style="margin-bottom:16px">
@@ -109,8 +109,8 @@
 </div>
 
 <div id="toast-container"></div>
-<script src="./scripts/ui.js"></script>
-<script src="./scripts/auth.js"></script>
+<script src="./ui.js"></script>
+<script src="./auth.js"></script>
 <script>
   // ── Register SW ─────────────────────────────────────────────────
   if ('serviceWorker' in navigator) {
