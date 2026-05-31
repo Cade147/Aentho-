@@ -50,7 +50,13 @@ function initFirebase() {
       // Keep local session mirrored to Firebase auth state
       onAuthStateChanged(_auth, user => {
         if (user) _persistSession(user);
-        else if (!_getLocalSession()) window.location.href = './index.html';
+        else {
+          // Only redirect if we're NOT on login/signup pages
+          const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+          if (currentPage === 'dashboard.html' && !_getLocalSession()) {
+            window.location.href = './index.html';
+          }
+        }
       });
 
       return true;
